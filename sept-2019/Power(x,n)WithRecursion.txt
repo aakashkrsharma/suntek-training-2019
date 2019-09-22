@@ -1,0 +1,22 @@
+//Power(x,n) with recursion
+
+
+
+#include <stdio.h>
+long int pow(long int,long int);
+int main()
+{
+    long int x, n, result;
+    printf("Enter base and power values: ");
+    scanf("%ld%ld",&x,&n);
+    result = pow(x,n);
+    printf("%d^%d = %d", x, n, result);
+    return 0;
+}
+long int pow(long int x,long int n)
+{
+    if (n!= 0)
+        return (x*pow(x,n-1));
+    else
+        return 1;
+}
