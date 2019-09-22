@@ -1,0 +1,20 @@
+//Diagonals of a square matrix
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,c=1,i,j;
+	scanf("%d",&n);
+	int a[n][n];
+	for(i=0;i<n;i++)
+	for(j=0;j<n;j++)
+	{a[i][j]=c;c++;
+	}
+	for(i=0;i<n;i++)
+	for(j=0;j<n;j++)
+	{
+		if(i==j)
+		printf("	%d	",a[i][j]);
+	}
+}
