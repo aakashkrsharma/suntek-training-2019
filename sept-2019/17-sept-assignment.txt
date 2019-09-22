@@ -1,0 +1,12 @@
+//Factorial without recursion
+int main()
+{
+	long long int m;
+	int i,n;
+	scanf("%d",&n);
+	m=n;
+	for(i=1;i<n;i++)
+	m=m*i;
+	printf("%lld	",m);
+	return 0;
+}
