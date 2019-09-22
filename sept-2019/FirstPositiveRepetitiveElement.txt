@@ -1,0 +1,26 @@
+//first positive repetitive element
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,i=0,j=0;
+	printf("enter no of elements:");
+	scanf("%d",&n);
+	int b[n],a[n];
+	printf("enter the elements:");
+	for(i=0;i<n;i++)
+	scanf("%d",&b[i]);
+	for(i=0;i<n;i++){
+		if(b[i]>0)
+		a[i]=b[i];
+	}
+	for(int i=1;a[i]!='\0';i++)
+	{
+		if(a[j]==a[i]&&a[i]>0)
+		{
+		printf("Positive repeated element is %d\n",a[j]);j++;
+		exit(0);
+	}	}
+	printf("No positive repeated element");
+}
