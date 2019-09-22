@@ -1,0 +1,28 @@
+//Prime with recursion
+
+#include<stdio.h>
+#include<stdlib.h>
+int prime(long int,long int);
+int main()   //prime or not
+{
+	long long int n;
+	printf("enter a number:");
+	scanf("%lld",&n);
+	if(n<0)
+	n=-(n);
+	prime(n,n/2);
+	return 0;
+}
+int prime(long n,long i)
+{
+	if(i==1){
+		printf("prime");
+		exit(0);
+		}
+	else if(n%i==0){
+		printf("not a prime");
+		exit(0);
+		}
+	else
+		prime(n,i-1);	
+}
